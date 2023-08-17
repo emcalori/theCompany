@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-weight: 200;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+nav h1 {
+    padding: 5px;
+    letter-spacing: 4px;
+    font-size: 3rem;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 50px;
+}
+
+nav li {
+    list-style: none;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+#trademark {
+    font-weight: lighter;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.mainImage {
+    width: 45%;
+    padding-left: 20px;
+}
+
+.aboutUs {
+    width: 35%;
+    text-align: justify;
+    padding-right: 20px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.technology {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.technology img {
+    width: 90%;
+    
+}
+
+.technology h3 {
+    margin-bottom: 20px;
+}
+
+.technology p {
+    text-align: justify;
+    width: 70%;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 350px;
+    gap: 50px;
+}
+
+.person {
+    text-align: center;
+}
+
+.person img {
+    width: 200px;
+    border-radius: 40px;
+}
+
+.person h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav ul {
+        align-self: center;
+        margin: 0 auto;
+    }
+
+    nav h1 {
+        width: 100%;
+    }
+
+    main {
+        align-items: center;
+        flex-direction: column;
+        margin: 50px 0;
+    }
+
+    .mainImage {
+        width: 80%;
+        margin-bottom: 20px;
+        padding-left: 0px;
+    }
+
+    .aboutUs {
+        width: 80%;
+        padding-right: 0px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .team {
+        flex-direction: column;
+    }
+
+    .person img {
+        width: 350px;
+    }
+}
